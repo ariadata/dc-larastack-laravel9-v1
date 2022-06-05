@@ -35,14 +35,6 @@ return [
 
     'connections' => [
 
-        'sqlite' => [
-            'driver' => 'sqlite',
-            'url' => env('DATABASE_URL'),
-            'database' => env('SQLITE_DB_PATH', database_path('database.sqlite')),
-            'prefix' => '',
-            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
-        ],
-
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('MYSQL_DATABASE_URL'),
@@ -91,6 +83,21 @@ return [
 
                 'database' => env('DB_AUTHENTICATION_DATABASE', 'admin'), // required with Mongo 3+
             ],
+        ],
+
+        'sqlite' => [
+            'driver' => 'sqlite',
+            'url' => env('DATABASE_URL'),
+            'database' => env('SQLITE_DB_PATH', database_path('database.sqlite')),
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+        ],
+
+        'phpunit_db' => [
+            'driver' => 'sqlite',
+            'database' => 'phpunit_database.sqlite',
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
         'sqlsrv' => [
