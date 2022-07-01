@@ -17,17 +17,17 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
     }
-	
-	/**
+
+    /**
      * Define the application's command Short schedules.
      * https://github.com/spatie/laravel-short-schedule
      *
-     * @param  \Spatie\ShortSchedule\ShortSchedule $shortSchedule
+     * @param  \Spatie\ShortSchedule\ShortSchedule  $shortSchedule
      * @return void
      */
-	protected function shortSchedule(\Spatie\ShortSchedule\ShortSchedule $shortSchedule)
+    protected function shortSchedule(\Spatie\ShortSchedule\ShortSchedule $shortSchedule)
     {
-		// $shortSchedule->command('short-command')->everySeconds(2);
+        // $shortSchedule->command('short-command')->everySeconds(2);
     }
 
     /**

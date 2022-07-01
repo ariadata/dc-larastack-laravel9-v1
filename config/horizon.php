@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'domain' => env('HORIZON_DOMAIN','localhost'),
+    'domain' => env('HORIZON_DOMAIN', 'localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -183,7 +183,7 @@ return [
         'production' => [
             'supervisor-1' => [
                 'connection' => 'redis',
-                'queue' => ['default','high'],
+                'queue' => ['default', 'high'],
                 'balance' => 'auto',
                 'processes' => 10,
                 'tries' => 3,
